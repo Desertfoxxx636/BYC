@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="content">
+        <h1>Welcome</h1>
+        <button onclick="showFakeAgeVerify()">Verify Age</button>
+    </div>
+
+    <!-- Age Verification Popup -->
+    <div id="age-popup" class="popup" style="display: none;">
+        <p>Are you 18 or older?</p>
+        <button onclick="fakeAgeVerified()">Yes, I am</button>
+    </div>
+
+    <!-- Geo Location Popup -->
+    <div id="geo-popup" class="popup" style="display: none;">
+        <p>Please allow location access to continue.</p>
+        <button onclick="allowGeo()">Allow Location</button>
+    </div>
+
+    <!-- External IP API script -->
+    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <script src="script.js"></script>
+</body>
+</html>
